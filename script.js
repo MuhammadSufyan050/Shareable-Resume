@@ -30,7 +30,7 @@ var _a, _b;
                 var resumeOutputElement = document.getElementById('resumeOutput');
                 if (resumeOutputElement) {
                     resumeOutputElement.innerHTML = resumeOutput_1;
-                    addDownloadButton(resumeOutput_1, uniquePath_1); // Only download button
+                    addDownloadButton(resumeOutput_1, uniquePath_1);
                 }
                 enableEditing();
             };
@@ -40,7 +40,7 @@ var _a, _b;
             var resumeOutputElement = document.getElementById('resumeOutput');
             if (resumeOutputElement) {
                 resumeOutputElement.innerHTML = resumeOutput_1;
-                addDownloadButton(resumeOutput_1, uniquePath_1); // Only download button
+                addDownloadButton(resumeOutput_1, uniquePath_1);
             }
             enableEditing();
         }
@@ -97,9 +97,7 @@ function enableEditing() {
     if (usernameElement) {
         var username = usernameElement.value;
         var shareableLink = "https://example.com/resumes/".concat(username.replace(/\s+/g, '_'), "_cv.html");
-        // Display the link to the user
         alert("Shareable Link: ".concat(shareableLink));
-        // Optionally, copy the link to the clipboard
         copyToClipboard(shareableLink);
     }
     else {

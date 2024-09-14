@@ -52,7 +52,7 @@ document.getElementById('resumeForm')?.addEventListener('submit', function(event
                 const resumeOutputElement = document.getElementById('resumeOutput');
                 if (resumeOutputElement) {
                     resumeOutputElement.innerHTML = resumeOutput;
-                    addDownloadButton(resumeOutput, uniquePath);  // Only download button
+                    addDownloadButton(resumeOutput, uniquePath); 
                 }
                 enableEditing();
             };
@@ -61,7 +61,7 @@ document.getElementById('resumeForm')?.addEventListener('submit', function(event
             const resumeOutputElement = document.getElementById('resumeOutput');
             if (resumeOutputElement) {
                 resumeOutputElement.innerHTML = resumeOutput;
-                addDownloadButton(resumeOutput, uniquePath);  // Only download button
+                addDownloadButton(resumeOutput, uniquePath);  
             }
             enableEditing(); 
         }
@@ -129,10 +129,9 @@ document.getElementById('ShareableLink')?.addEventListener('click', function() {
         const username = usernameElement.value;
         const shareableLink = `https://example.com/resumes/${username.replace(/\s+/g, '_')}_cv.html`;
 
-        // Display the link to the user
         alert(`Shareable Link: ${shareableLink}`);
 
-        // Optionally, copy the link to the clipboard
+        
         copyToClipboard(shareableLink);
     } else {
         console.error('Username is missing');
